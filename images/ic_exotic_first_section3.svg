@@ -1,0 +1,10 @@
+<svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Diagnostics">
+<path id="Vector" d="M54.3333 37.6447V14C54.3333 11.2386 52.0947 9 49.3333 9H10.5833C7.82183 9 5.58325 11.2386 5.58325 14V37C5.58325 39.7614 7.82183 42 10.5833 42H49.9322" stroke="#3B5060" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_2" d="M16.8333 45.75V54.6M43.5332 45.75V54.6" stroke="#3B5060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="Vector_3" x="9.33325" y="12.75" width="41.25" height="19.5" rx="2" stroke="#FF3D3D" stroke-width="2"/>
+<path id="Vector_4" d="M19.8333 22.8882C23.8833 18.5382 26.7333 28.5882 30.6333 23.6381C36.7867 15.8279 37.5333 24.5382 41.1333 20.4881" stroke="#FF3D3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="Vector_5" cx="12.7833" cy="37.65" rx="1.2" ry="0.9" stroke="#3B5060" stroke-width="2"/>
+<ellipse id="Vector_6" cx="18.1834" cy="37.65" rx="1.2" ry="0.9" stroke="#3B5060" stroke-width="2"/>
+</g>
+</svg>

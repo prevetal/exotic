@@ -1,0 +1,3506 @@
+/*-----------
+    Fonts
+-----------*/
+@font-face
+{
+    font-family: 'TT Drugs';
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/TTDrugs-Bold.woff2') format('woff2'),
+    url('../fonts/TTDrugs-Bold.woff') format('woff'),
+    url('../fonts/TTDrugs-Bold.ttf') format('truetype');
+}
+
+
+
+/*------------
+    Exotic
+------------*/
+.exotic
+{
+    font-family: 'Roboto';
+
+    color: #25343f;
+}
+
+
+.exotic *
+{
+    box-sizing: border-box;
+}
+
+.exotic *:before,
+.exotic *:after
+{
+    box-sizing: border-box;
+}
+
+
+.exotic > * + *
+{
+    margin-top: 64px;
+}
+
+
+.exotic button
+{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+
+    display: inline-block;
+
+    padding: 0;
+
+    cursor: pointer;
+    vertical-align: top;
+
+    color: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+.exotic .row
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+
+.exotic .block_title
+{
+    font-family: 'TT Drugs';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 108%;
+
+    position: relative;
+
+    margin-bottom: 36px;
+}
+
+
+
+.exotic .block_desc
+{
+    font-size: 15px;
+    line-height: 144%;
+
+    position: relative;
+
+    width: 1025px;
+    max-width: 100%;
+    margin-top: -21px;
+    margin-bottom: 35px;
+}
+
+
+
+/*----------------------------
+    Exotic - First section
+----------------------------*/
+.exotic_first_section
+{
+    padding-bottom: 32px;
+}
+
+
+.exotic_first_section .container
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.exotic_first_section .data
+{
+    position: relative;
+    z-index: 3;
+
+    min-height: 500px;
+    margin-bottom: -32px;
+    padding: 90px 0;
+
+    background: #f4ffda;
+}
+
+
+.exotic_first_section .data .info
+{
+    width: 700px;
+    max-width: 100%;
+}
+
+
+.exotic_first_section .data .title
+{
+    font-family: 'TT Drugs';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 108%;
+
+    color: #039900;
+}
+
+
+.exotic_first_section .data .desc
+{
+    font-size: 19px;
+    line-height: 144%;
+
+    margin-top: 24px;
+}
+
+
+.exotic_first_section .data .bg
+{
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 0;
+
+    max-width: none;
+    margin-right: -780px;
+
+    pointer-events: none;
+}
+
+
+
+.exotic_first_section .row
+{
+    position: relative;
+    z-index: 5;
+
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -32px;
+    margin-left: -32px;
+}
+
+.exotic_first_section .row > *
+{
+    width: calc(33.333% - 32px);
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+
+.exotic_first_section .item
+{
+    font-family: 'TT Drugs';
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 112%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 32px;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+.exotic_first_section .item:nth-child(1)
+{
+    background: #e8ffdd;
+}
+
+.exotic_first_section .item:nth-child(2n)
+{
+    background: #f4ffca;
+}
+
+.exotic_first_section .item:nth-child(3n)
+{
+    background: #fff7cb;
+}
+
+
+
+.exotic_first_section .item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 28px;
+
+    border-radius: 50%;
+    background: #fff;
+}
+
+.exotic_first_section .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.exotic_first_section .item .name
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.exotic_first_section .text
+{
+    font-size: 17px;
+    line-height: 144%;
+
+    margin-top: 36px;
+    padding: 0 30px;
+
+    text-align: center;
+}
+
+
+
+/*----------------------
+    Exotic - Animals
+----------------------*/
+.exotic_animals .swiper
+{
+    overflow: visible !important;
+}
+
+
+.exotic_animals .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.exotic_animals .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.exotic_animals .swiper-pagination
+{
+    display: none;
+}
+
+
+.exotic_animals .item
+{
+    font-size: 17px;
+    line-height: 144%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 15px;
+    background: #f0f9ff;
+}
+
+
+.exotic_animals .item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 16px;
+}
+
+.exotic_animals .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.exotic_animals .item .icon + *
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 96px;
+}
+
+
+
+.exotic_animals .notice
+{
+    font-size: 15px;
+    line-height: 144%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 45px;
+    padding: 11px 31px;
+
+    letter-spacing: -.15px;
+
+    border: 1px solid rgba(27, 140, 209, .25);
+    border-radius: 15px;
+}
+
+
+.exotic_animals .notice .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+}
+
+.exotic_animals .notice .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.exotic_animals .notice .icon + *
+{
+    align-self: center;
+
+    width: calc(100% - 112px);
+}
+
+
+
+/*---------------------------
+    Exotic - Action block
+---------------------------*/
+.exotic_action_block
+{
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 600px;
+}
+
+.exotic_action_block:before
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: rgba(0, 0, 0, .50);
+}
+
+.exotic_action_block .bg
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.exotic_action_block .container
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.exotic_action_block .title
+{
+    font-family: 'TT Drugs';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 108%;
+
+    margin-bottom: 36px;
+
+    text-align: center;
+
+    color: #fff;
+    text-shadow: 0 0 5px #383a4b, 0 0 45px #383a4b;
+}
+
+
+.exotic_action_block .btn
+{
+    font-size: 21px;
+    line-height: 144%;
+
+    display: block;
+
+    margin: 0 auto;
+    padding: 13px 32px;
+
+    color: #fff;
+    border-radius: 48px;
+    background: #37a238;
+}
+
+
+.exotic_action_block .exp
+{
+    font-size: 19px;
+    line-height: 144%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 38px;
+
+    color: #fff;
+    text-shadow: 0 0 5px #383a4b, 0 0 45px #383a4b;
+}
+
+
+.exotic_action_block .exp .icon
+{
+    display: block;
+
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+
+.exotic_action_block .exp span
+{
+    position: relative;
+    top: 2px;
+
+    align-self: center;
+
+    max-width: calc(100% - 37px);
+}
+
+
+
+/*-----------------------
+    Exotic - The best
+-----------------------*/
+.exotic_the_best .item
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 24px 64px;
+
+    border-top: 1px solid #6b75a2;
+}
+
+
+.exotic_the_best .item .thumb
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 330px;
+    max-width: 100%;
+    height: 220px;
+
+    border-radius: 15px;
+    background: #ddd;
+}
+
+.exotic_the_best .item:nth-child(2n) .thumb
+{
+    order: 2;
+}
+
+
+.exotic_the_best .item .thumb img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+.exotic_the_best .item .thumb + *
+{
+    align-self: center;
+
+    width: calc(100% - 394px);
+}
+
+
+.exotic_the_best .item .name
+{
+    font-family: 'TT Drugs';
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 112%;
+}
+
+
+.exotic_the_best .item .desc
+{
+    font-size: 15px;
+    line-height: 144%;
+
+    margin-top: 8px;
+
+    color: #3b5060;
+}
+
+
+.exotic_the_best .item .desc ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.exotic_the_best .item .desc ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+}
+
+
+.exotic_the_best .item .desc ul li:before
+{
+    position: absolute;
+    top: 7px;
+    left: 3px;
+
+    display: block;
+
+    width: 3px;
+    height: 3px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+
+.exotic_the_best .notice
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 128px;
+}
+
+
+.exotic_the_best .notice .title
+{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 136%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 548px;
+    max-width: 100%;
+
+    color: #3b5060;
+}
+
+.exotic_the_best .notice .title .icon
+{
+    display: block;
+
+    width: 80px;
+    height: 80px;
+}
+
+.exotic_the_best .notice .title span
+{
+    width: calc(100% - 112px);
+}
+
+
+.exotic_the_best .notice .desc
+{
+    font-size: 19px;
+    line-height: 144%;
+
+    width: calc(100% - 612px);
+    margin-left: auto;
+}
+
+
+
+/*-------------------------
+    Exotic - Recomended
+-------------------------*/
+.exotic_recomended
+{
+    padding-bottom: 64px;
+}
+
+
+.exotic_recomended .image
+{
+    width: 555px;
+    max-width: 100%;
+}
+
+.exotic_recomended .image img
+{
+    display: block;
+
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.exotic_recomended .text
+{
+    font-size: 19px;
+    line-height: 144%;
+
+    align-self: center;
+
+    width: 477px;
+    max-width: calc(100% - 619px);
+    margin-left: 64px;
+}
+
+
+.exotic_recomended .text .required
+{
+    color: #ff3d3d;
+}
+
+
+
+/*-------------------------
+    Exotic - Prevention
+-------------------------*/
+.exotic_prevention
+{
+    padding-bottom: 64px;
+}
+
+
+.exotic_prevention .block_title .exp
+{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 144%;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    white-space: nowrap;
+
+    color: #ff3d3d;
+}
+
+
+.exotic_prevention .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -32px;
+    margin-left: -32px;
+}
+
+.exotic_prevention .row > *
+{
+    width: calc(50% - 32px);
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+
+.exotic_prevention .item
+{
+    padding: 32px 64px 32px 32px;
+
+    border-radius: 15px;
+    background: #f0f9ff;
+}
+
+
+.exotic_prevention .item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 16px;
+}
+
+.exotic_prevention .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.exotic_prevention .item .name
+{
+    font-family: 'TT Drugs';
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 112%;
+}
+
+
+.exotic_prevention .item .desc
+{
+    font-size: 17px;
+    line-height: 144%;
+
+    margin-top: 8px;
+
+    color: #3b5060;
+}
+
+
+.exotic_prevention .notice
+{
+    font-size: 15px;
+    line-height: 144%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 36px;
+    padding-top: 12px;
+
+    color: #3b5060;
+    border-top: 1px solid rgba(27, 140, 209, .25);
+}
+
+.exotic_prevention .notice .icon
+{
+    display: block;
+
+    width: 80px;
+    height: 80px;
+}
+
+.exotic_prevention .notice .icon + *
+{
+    align-self: center;
+
+    width: calc(100% - 112px);
+}
+
+
+.exotic_prevention .btn
+{
+    font-size: 19px;
+    line-height: 144%;
+
+    display: block;
+
+    margin: 36px auto 0;
+    padding: 12px 32px;
+
+    color: #fff;
+    border-radius: 48px;
+    background: #37a238;
+}
+
+
+
+/*--------------------
+    Exotic - Steps
+--------------------*/
+.exotic_steps
+{
+    padding-bottom: 32px;
+}
+
+
+.exotic_steps .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -32px;
+    margin-left: -32px;
+}
+
+.exotic_steps .row > *
+{
+    width: calc(33.333% - 32px);
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+
+.exotic_steps .step
+{
+    position: relative;
+
+    padding: 31px;
+
+    text-align: center;
+
+    border: 1px solid#1b8cd1;
+    border-radius: 15px;
+}
+
+
+.exotic_steps .step .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 16px;
+    padding: 10px;
+
+    border-radius: 50%;
+    background: #f0f9ff;
+}
+
+.exotic_steps .step .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.exotic_steps .step .desc
+{
+    font-size: 17px;
+    line-height: 144%;
+}
+
+
+.exotic_steps .step .exp
+{
+    font-size: 13px;
+    line-height: 144%;
+
+    margin-top: 10px;
+    padding-top: 10px;
+
+    color: #3b5060;
+    border-top: 1px solid rgba(27, 140, 209, .25);
+}
+
+
+
+/*----------------------------
+    Exotic - Why important
+----------------------------*/
+.exotic_why_important
+{
+    padding-bottom: 32px;
+}
+
+
+.exotic_why_important .question
+{
+    font-family: 'TT Drugs';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 136%;
+
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 931px;
+    max-width: 100%;
+    margin-left: 30px;
+    padding: 30px;
+
+    color: #3b5060;
+    border-radius: 15px 15px 15px 0;
+    background: #f0f9ff;
+}
+
+.exotic_why_important .question:before
+{
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+
+    display: block;
+
+    width: 30px;
+    height: 30px;
+
+    content: '';
+
+    border: 15px solid transparent;
+    border-right-color: #f0f9ff;
+    border-bottom-color: #f0f9ff;
+}
+
+.exotic_why_important .question .icon
+{
+    display: block;
+
+    width: 40px;
+    height: 40px;
+}
+
+.exotic_why_important .question span
+{
+    align-self: center;
+
+    width: calc(100% - 70px);
+}
+
+
+.exotic_why_important .answer
+{
+    font-family: 'TT Drugs';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 136%;
+
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 931px;
+    max-width: 100%;
+    margin-top: 16px;
+    margin-right: 30px;
+    margin-left: auto;
+    padding: 30px;
+
+    color: #37a238;
+    border-radius: 15px 15px 0 15px;
+    background: #e5ffd9;
+}
+
+.exotic_why_important .answer:before
+{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+
+    display: block;
+
+    width: 30px;
+    height: 30px;
+
+    content: '';
+
+    border: 15px solid transparent;
+    border-bottom-color: #e5ffd9;
+    border-left-color: #e5ffd9;
+}
+
+.exotic_why_important .answer .icon
+{
+    display: block;
+
+    width: 40px;
+    height: 40px;
+}
+
+.exotic_why_important .answer span
+{
+    align-self: center;
+
+    width: calc(100% - 70px);
+}
+
+
+
+/*-----------------------
+    Exotic - Look_for
+-----------------------*/
+.exotic_look_for
+{
+    padding-bottom: 64px;
+}
+
+
+.exotic_look_for .data
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 32px;
+
+    border-radius: 15px;
+    background: #f0f9ff;
+}
+
+
+.exotic_look_for .data .col
+{
+    width: calc(50% - 78px);
+}
+
+.exotic_look_for .data .col > * + *
+{
+    margin-top: 15px;
+}
+
+
+.exotic_look_for .data .item
+{
+    font-size: 15px;
+    line-height: 144%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-right: 30px;
+}
+
+.exotic_look_for .data .item img
+{
+    display: block;
+
+    width: 40px;
+    height: 40px;
+}
+
+.exotic_look_for .data .item div
+{
+    align-self: center;
+
+    width: calc(100% - 52px);
+    margin-left: auto;
+}
+
+.exotic_look_for .data .item .required
+{
+    color: #ff3d3d;
+}
+
+
+.exotic_look_for .data .or
+{
+    font-size: 14px;
+    line-height: 144%;
+
+    align-self: center;
+
+    padding: 4px 16px;
+
+    color: #708690;
+    border-radius: 20px;
+    background: #fff;
+}
+
+
+
+.exotic_look_for .example
+{
+    margin-top: 64px;
+}
+
+
+.exotic_look_for .example .exp
+{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 144%;
+
+    margin-bottom: 16px;
+    padding: 0 60px;
+
+    text-align: right;
+
+    color: #ff3d3d;
+}
+
+
+.exotic_look_for .example .image
+{
+    width: 555px;
+    max-width: 100%;
+}
+
+.exotic_look_for .example .image img
+{
+    display: block;
+
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.exotic_look_for .example .info
+{
+    align-self: center;
+
+    width: 485px;
+    max-width: 100%;
+    margin-right: 60px;
+    margin-left: auto;
+}
+
+
+.exotic_look_for .example .text
+{
+    font-size: 19px;
+    line-height: 144%;
+}
+
+
+.exotic_look_for .example .btn
+{
+    font-size: 19px;
+    line-height: 144%;
+
+    margin-top: 36px;
+    padding: 12px 32px;
+
+    color: #fff;
+    border-radius: 48px;
+    background: #37a238;
+}
+
+
+
+/*------------------------------
+    Exotic - Self-medication
+------------------------------*/
+.exotic_self_medication .block_title
+{
+    margin-bottom: 30px;
+}
+
+
+.exotic_self_medication .notice
+{
+    font-size: 15px;
+    line-height: 144%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 36px;
+    padding: 12px 32px;
+
+    color: #3b5060;
+    border-radius: 15px;
+    background: #ffe9e9;
+}
+
+.exotic_self_medication .notice img
+{
+    display: block;
+
+    width: 40px;
+    height: 40px;
+}
+
+.exotic_self_medication .notice span
+{
+    width: calc(100% - 72px);
+}
+
+
+.exotic_self_medication .text
+{
+    font-size: 19px;
+    line-height: 144%;
+
+    width: calc(100% - 383px);
+}
+
+
+.exotic_self_medication .row
+{
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.exotic_self_medication .icon
+{
+    width: 351px;
+    max-width: 100%;
+}
+
+.exotic_self_medication .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/*----------------------
+    Exotic - Doctors
+----------------------*/
+.exotic_doctors
+{
+    padding: 64px 0;
+
+    background: #f0f9ff;
+}
+
+
+.exotic_doctors .swiper
+{
+    overflow: visible !important;
+}
+
+
+.exotic_doctors .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.exotic_doctors .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.exotic_doctors .swiper-button-next,
+.exotic_doctors .swiper-button-prev
+{
+    top: 0;
+    bottom: auto;
+
+    margin: 0;
+
+    transform: translateY(-50%);
+}
+
+
+.exotic_doctors .swiper-pagination
+{
+    display: flex;
+}
+
+
+.exotic_doctors .person .photo
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+    background: #fff;
+}
+
+.exotic_doctors .person .photo img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.exotic_doctors .person .name
+{
+    font-family: 'TT Drugs';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 112%;
+}
+
+
+.exotic_doctors .person .post,
+.exotic_doctors .person .experience
+{
+    font-size: 15px;
+    line-height: 144%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 8px;
+
+    color: #3b5060;
+}
+
+.exotic_doctors .person .post .icon,
+.exotic_doctors .person .experience .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+.exotic_doctors .person .post span,
+.exotic_doctors .person .experience span
+{
+    width: calc(100% - 32px);
+}
+
+
+
+/*--------------------------
+    Exotic - Diagnostics
+--------------------------*/
+.exotic_diagnostics .data
+{
+    font-size: 17px;
+    line-height: 144%;
+
+    width: calc(100% - 619px);
+}
+
+
+.exotic_diagnostics .data > *
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exotic_diagnostics .data > * + *
+{
+    margin-top: 16px;
+}
+
+
+.exotic_diagnostics .data img
+{
+    display: block;
+
+    width: 32px;
+    height: 32px;
+}
+
+.exotic_diagnostics .data span
+{
+    align-self: center;
+
+    width: calc(100% - 44px);
+}
+
+
+.exotic_diagnostics .image
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 555px;
+    height: 370px;
+    margin-left: auto;
+
+    border-radius: 15px;
+    background: #ddd;
+}
+
+.exotic_diagnostics .image img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+
+/*----------------------
+    Exotic - Surgery
+----------------------*/
+.exotic_surgery
+{
+    padding-bottom: 64px;
+}
+
+
+.exotic_surgery .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -32px;
+    margin-left: -32px;
+}
+
+.exotic_surgery .row > *
+{
+    width: calc(25% - 32px);
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+
+.exotic_surgery .item
+{
+    font-size: 15px;
+    line-height: 144%;
+
+    padding: 32px;
+
+    text-align: center;
+
+    color: #383a4b;
+    border-radius: 15px;
+    background: #f0f9ff;
+}
+
+
+.exotic_surgery .item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 16px;
+}
+
+.exotic_surgery .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/*---------------------
+    Exotic - Prices
+---------------------*/
+.exotic_prices
+{
+    padding-bottom: 64px;
+}
+
+
+.exotic_prices .table_wrap
+{
+    position: relative;
+}
+
+
+.exotic_prices .table_wrap.hide
+{
+    overflow: hidden;
+
+    height: 410px;
+}
+
+.exotic_prices .table_wrap.hide:after
+{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 80px;
+
+    content: '';
+
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+}
+
+
+.exotic_prices table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.exotic_prices table th
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 144%;
+
+    padding: 14px 15px;
+
+    text-align: left;
+    vertical-align: middle;
+
+    color: #fff;
+    background: #3b5060;
+}
+
+.exotic_prices table th:last-child
+{
+    text-align: center;
+}
+
+.exotic_prices table th + th
+{
+    border-left: 1px solid #fff;
+}
+
+
+.exotic_prices table td
+{
+    font-size: 17px;
+    line-height: 144%;
+
+    padding: 13px 15px;
+
+    text-align: left;
+    vertical-align: middle;
+}
+
+.exotic_prices table td.price
+{
+    font-weight: 700;
+
+    width: 200px;
+    min-width: 200px;
+
+    table-layout: fixed;
+}
+
+.exotic_prices table tbody tr:nth-child(2n) td
+{
+    background: #f0f9ff;
+}
+
+.exotic_prices table td + td
+{
+    border-left: 1px solid rgba(27, 140, 209, .25);
+}
+
+.exotic_prices table td:last-child
+{
+    text-align: center;
+}
+
+
+.exotic_prices .spoler_btn
+{
+    font-size: 14px;
+    line-height: 144%;
+
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 50%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 4px 6px 4px 12px;
+
+    transform: translateX(-50%);
+
+    color: #3b5060;
+    border-radius: 20px;
+    background: #f0f9ff;
+}
+
+.exotic_prices .spoler_btn .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+
+    transition: transform .2s linear;
+}
+
+.exotic_prices .spoler_btn span + span
+{
+    display: none;
+}
+
+
+.exotic_prices .spoler_btn.active span
+{
+    display: none;
+}
+
+.exotic_prices .spoler_btn.active span + span
+{
+    display: block;
+}
+
+.exotic_prices .spoler_btn.active .icon
+{
+    transform: rotate(180deg);
+}
+
+
+
+/*--------------------
+    Exotic - Cases
+--------------------*/
+.exotic_cases
+{
+    padding-bottom: 64px;
+}
+
+
+.exotic_cases .main_swiper
+{
+    overflow: visible !important;
+}
+
+
+.exotic_cases .main_swiper > .swiper-wrapper > .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.exotic_cases .main_swiper > .swiper-wrapper > .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.exotic_cases .swiper-button-next,
+.exotic_cases .swiper-button-prev
+{
+    top: 0;
+    bottom: auto;
+
+    margin: 0;
+
+    transform: translateY(-50%);
+}
+
+
+.exotic_cases .swiper-pagination
+{
+    display: none;
+}
+
+
+.exotic_cases .item .thumb
+{
+    position: relative;
+
+    margin-bottom: 16px;
+}
+
+
+.exotic_cases .item .thumb a
+{
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    overflow: hidden;
+
+    padding-bottom: 66.666%;
+
+    text-decoration: none;
+
+    color: currentColor;
+    border-radius: 15px;
+    background: #ddd;
+}
+
+
+.exotic_cases .item .thumb a img:not(.play)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+.exotic_cases .item .swiper .thumb a img:not(.play)
+{
+    border-radius: 0;
+}
+
+/* .exotic_cases .item .thumb a img.play
+{
+    position: absolute;
+    z-index: 3;
+
+    display: block;
+
+    width: 60px;
+    height: 60px;
+    margin: auto;
+
+    inset: 0;
+} */
+
+
+/* .exotic_cases .item .slider_icon
+{
+    position: absolute;
+    z-index: 3;
+    right: 15px;
+    bottom: 15px;
+
+    width: 24px;
+    height: 24px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.exotic_cases .item .slider_icon img
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+} */
+
+
+.exotic_cases .item .text
+{
+    font-size: 14px;
+    line-height: 144%;
+}
+
+.exotic_cases .item .text.hide
+{
+    overflow: hidden;
+
+    height: 184px;
+}
+
+
+.exotic_cases .item .exp
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 144%;
+
+    margin-top: 12px;
+    padding-top: 5px;
+
+    color: #3b5060;
+    border-top: 1px solid #dbdced;
+}
+
+.exotic_cases .item .text.hide ~ .exp
+{
+    display: none;
+}
+
+
+.exotic_cases .item .doctor
+{
+    font-size: 14px;
+    line-height: 144%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 12px;
+
+    color: #3b5060;
+}
+
+.exotic_cases .item .text.hide ~ .doctor
+{
+    display: none;
+}
+
+.exotic_cases .item .doctor .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+.exotic_cases .item .doctor span
+{
+    width: calc(100% - 32px);
+}
+
+
+.exotic_cases .item .spoler_btn
+{
+    font-size: 13px;
+    line-height: 144%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 12px;
+    padding: 4px 5px 4px 10px;
+
+    color: #3b5060;
+    border-radius: 20px;
+    background: #f0f9ff;
+}
+
+.exotic_cases .item .spoler_btn .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+
+    transition: transform .2s linear;
+}
+
+.exotic_cases .item .spoler_btn span + span
+{
+    display: none;
+}
+
+
+.exotic_cases .item .spoler_btn.active span
+{
+    display: none;
+}
+
+.exotic_cases .item .spoler_btn.active span + span
+{
+    display: block;
+}
+
+.exotic_cases .item .spoler_btn.active .icon
+{
+    transform: rotate(180deg);
+}
+
+
+
+/*--------------------
+    Exotic - Gallery
+--------------------*/
+.exotic_gallery
+{
+    padding-bottom: 16px;
+}
+
+
+.exotic_gallery .swiper
+{
+    overflow: visible !important;
+}
+
+
+.exotic_gallery .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.exotic_gallery .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.exotic_gallery .swiper-button-next,
+.exotic_gallery .swiper-button-prev
+{
+    top: 0;
+    bottom: auto;
+
+    margin: 0;
+
+    transform: translateY(-50%);
+}
+
+
+.exotic_gallery .swiper-pagination
+{
+    display: none;
+}
+
+
+.exotic_gallery .item
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-bottom: 66.666%;
+
+    text-decoration: none;
+
+    color: currentColor;
+    border-radius: 15px;
+    background: #ddd;
+}
+
+.exotic_gallery .item img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+
+/*---------------------
+    Exotic - Finish
+---------------------*/
+.exotic_finish
+{
+    padding: 64px 0;
+
+    color: #fff;
+    background: #1b8cd1;
+}
+
+
+.exotic_finish .image
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 555px;
+    max-width: 100%;
+    height: 370px;
+
+    border-radius: 15px;
+    background: #ddd;
+}
+
+.exotic_finish .image img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.exotic_finish .data
+{
+    align-self: center;
+
+    width: 521px;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+
+.exotic_finish .text
+{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 144%;
+}
+
+
+.exotic_finish .message
+{
+    font-size: 15px;
+    line-height: 144%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 16px;
+    padding: 14px;
+
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.exotic_finish .message img
+{
+    display: block;
+
+    width: 40px;
+    height: 40px;
+}
+
+.exotic_finish .message span
+{
+    align-self: center;
+
+    width: calc(100% - 55px);
+    margin-left: auto;
+}
+
+
+.exotic_finish .btn
+{
+    font-size: 19px;
+    line-height: 144%;
+
+    margin-top: 36px;
+    padding: 12px 32px;
+
+    color: #fff;
+    border-radius: 48px;
+    background: #37a238;
+    box-shadow: 0 2px 2px 0 rgba(0, 13, 21, .32);
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    /*------------
+        Exotic
+    ------------*/
+    .exotic > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+    .exotic .block_title
+    {
+        font-size: 22px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .exotic .block_desc
+    {
+        margin-top: -12px;
+        margin-bottom: 20px;
+    }
+
+
+
+    /*----------------------------
+        Exotic - First section
+    ----------------------------*/
+    .exotic_first_section
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .exotic_first_section .data
+    {
+        min-height: 400px;
+        padding: 30px 0;
+    }
+
+
+    .exotic_first_section .data .info
+    {
+        width: 354px;
+    }
+
+
+    .exotic_first_section .data .title
+    {
+        font-size: 25px;
+    }
+
+    .exotic_first_section .data .title br
+    {
+        display: none;
+    }
+
+
+    .exotic_first_section .data .desc
+    {
+        font-size: 15px;
+
+        margin-top: 12px;
+    }
+
+
+    .exotic_first_section .data .bg
+    {
+        width: 750px;
+        height: auto;
+        margin-right: -516px;
+    }
+
+
+
+    .exotic_first_section .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .exotic_first_section .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .exotic_first_section .item
+    {
+        font-size: 18px;
+
+        padding: 20px;
+    }
+
+
+    .exotic_first_section .item .icon
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .exotic_first_section .text
+    {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+
+
+    /*----------------------
+        Exotic - Animals
+    ----------------------*/
+    .exotic_animals .swiper
+    {
+        height: 388px;
+    }
+
+
+    .exotic_animals .swiper-slide
+    {
+        visibility: visible;
+
+        height: 184px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .exotic_animals .swiper-button-next,
+    .exotic_animals .swiper-button-prev
+    {
+        display: none;
+    }
+
+    .exotic_animals .swiper-pagination
+    {
+        display: flex;
+    }
+
+
+    .exotic_animals .item
+    {
+        padding: 20px;
+    }
+
+
+    .exotic_animals .item .icon
+    {
+        margin-bottom: 12px;
+    }
+
+    .exotic_animals .item .icon + *
+    {
+        min-height: 72px;
+    }
+
+
+    .exotic_animals .notice
+    {
+        margin-top: 60px;
+        padding: 11px 19px;
+    }
+
+    .exotic_animals .notice .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .exotic_animals .notice .icon + *
+    {
+        width: calc(100% - 52px);
+    }
+
+
+
+    /*---------------------------
+        Exotic - Action block
+    ---------------------------*/
+    .exotic_action_block
+    {
+        min-height: 400px;
+    }
+
+
+    .exotic_action_block .title
+    {
+        font-size: 22px;
+
+        width: 540px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-left: auto;
+    }
+
+
+    .exotic_action_block .btn
+    {
+        font-size: 17px;
+
+        padding: 10px 32px;
+    }
+
+
+    .exotic_action_block .exp
+    {
+        font-size: 15px;
+
+        margin-top: 25px;
+    }
+
+
+
+    /*-----------------------
+        Exotic - The best
+    -----------------------*/
+    .exotic_the_best .items
+    {
+        display: flex;
+        align-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .exotic_the_best .items > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .exotic_the_best .item
+    {
+        display: block;
+
+        padding: 12px 0 20px;
+    }
+
+
+    .exotic_the_best .item .thumb
+    {
+        width: 258px;
+        height: 172px;
+    }
+
+
+    .exotic_the_best .item .thumb + *
+    {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+    .exotic_the_best .item .name
+    {
+        font-size: 18px;
+    }
+
+    .exotic_the_best .item .desc
+    {
+        margin-top: 4px;
+    }
+
+
+
+    .exotic_the_best .notice
+    {
+        margin-top: 80px;
+    }
+
+
+    .exotic_the_best .notice .title
+    {
+        width: 100%;
+    }
+
+
+    .exotic_the_best .notice .title .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .exotic_the_best .notice .title span
+    {
+        width: calc(100% - 52px);
+    }
+
+
+    .exotic_the_best .notice .desc
+    {
+        font-size: 15px;
+
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 52px;
+    }
+
+
+
+    /*-------------------------
+        Exotic - Recomended
+    -------------------------*/
+    .exotic_recomended
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .exotic_recomended .image
+    {
+        width: 300px;
+    }
+
+
+    .exotic_recomended .text
+    {
+        font-size: 15px;
+
+        width: calc(100% - 320px);
+        max-width: calc(100% - 320px);
+        margin-left: auto;
+    }
+
+
+
+    /*-------------------------
+        Exotic - Prevention
+    -------------------------*/
+    .exotic_prevention
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .exotic_prevention .block_title .exp
+    {
+        position: relative;
+
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+    .exotic_prevention .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .exotic_prevention .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .exotic_prevention .item
+    {
+        padding: 20px;
+    }
+
+
+    .exotic_prevention .item .icon
+    {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 12px;
+    }
+
+
+    .exotic_prevention .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .exotic_prevention .item .desc
+    {
+        font-size: 15px;
+    }
+
+
+    .exotic_prevention .notice
+    {
+        margin-top: 30px;
+    }
+
+
+    .exotic_prevention .notice .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .exotic_prevention .notice .icon + *
+    {
+        width: calc(100% - 52px);
+    }
+
+
+    .exotic_prevention .btn
+    {
+        font-size: 17px;
+
+        padding: 10px 32px;
+    }
+
+
+
+    /*--------------------
+        Exotic - Steps
+    --------------------*/
+    .exotic_steps
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .exotic_steps .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .exotic_steps .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .exotic_steps .step
+    {
+        padding: 20px;
+    }
+
+
+    .exotic_steps .step .icon
+    {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 12px;
+    }
+
+
+    .exotic_steps .step .desc
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*----------------------------
+        Exotic - Why important
+    ----------------------------*/
+    .exotic_why_important .question
+    {
+        font-size: 20px;
+
+        margin-left: 15px;
+        padding: 15px;
+    }
+
+    .exotic_why_important .question:before
+    {
+        width: 16px;
+        height: 16px;
+
+        border-width: 8px;
+    }
+
+    .exotic_why_important .question .icon
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    .exotic_why_important .question span
+    {
+        width: calc(100% - 40px);
+    }
+
+
+    .exotic_why_important .answer
+    {
+        font-size: 20px;
+
+        margin-right: 15px;
+        padding: 15px;
+    }
+
+    .exotic_why_important .answer:before
+    {
+        width: 16px;
+        height: 16px;
+
+        border-width: 8px;
+    }
+
+    .exotic_why_important .answer .icon
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    .exotic_why_important .answer span
+    {
+        width: calc(100% - 40px);
+    }
+
+
+
+    /*-----------------------
+        Exotic - Look_for
+    -----------------------*/
+    .exotic_look_for
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .exotic_look_for .data
+    {
+        padding: 20px;
+    }
+
+
+    .exotic_look_for .data .col
+    {
+        width: calc(50% - 42px);
+    }
+
+
+    .exotic_look_for .data .col > * + *
+    {
+        margin-top: 10px;
+    }
+
+
+
+    .exotic_look_for .example
+    {
+        margin-top: 80px;
+    }
+
+
+    .exotic_look_for .example .exp
+    {
+        margin-bottom: 8px;
+        padding: 0;
+    }
+
+
+    .exotic_look_for .example .image
+    {
+        align-self: center;
+
+        width: 300px;
+    }
+
+
+    .exotic_look_for .example .info
+    {
+        width: calc(100% - 320px);
+        margin-right: 0;
+    }
+
+
+    .exotic_look_for .example .text
+    {
+        font-size: 15px;
+    }
+
+
+    .exotic_look_for .example .btn
+    {
+        font-size: 17px;
+
+        margin-top: 30px;
+        padding: 10px 32px;
+    }
+
+
+
+    /*------------------------------
+        Exotic - Self-medication
+    ------------------------------*/
+    .exotic_self_medication .notice
+    {
+        margin-bottom: 20px;
+        padding: 12px 20px;
+    }
+
+
+    .exotic_self_medication .notice img
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .exotic_self_medication .notice span
+    {
+        width: calc(100% - 42px);
+    }
+
+
+    .exotic_self_medication .text
+    {
+        font-size: 15px;
+
+        width: calc(100% - 187px);
+    }
+
+
+    .exotic_self_medication .icon
+    {
+        width: 167px;
+    }
+
+
+
+    /*----------------------
+        Exotic - Doctors
+    ----------------------*/
+    .exotic_doctors
+    {
+        padding: 40px 0;
+    }
+
+
+    .exotic_doctors .swiper-button-next,
+    .exotic_doctors .swiper-button-prev
+    {
+        display: none;
+    }
+
+    .exotic_doctors .swiper-pagination
+    {
+        display: flex;
+    }
+
+
+    .exotic_doctors .swiper-slide
+    {
+        width: 261px;
+    }
+
+
+    .exotic_doctors .person .photo
+    {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100%;
+    }
+
+
+
+    /*--------------------------
+        Exotic - Diagnostics
+    --------------------------*/
+    .exotic_diagnostics
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .exotic_diagnostics .data
+    {
+        font-size: 15px;
+
+        width: calc(100% - 374px);
+    }
+
+    .exotic_diagnostics .data > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    .exotic_diagnostics .data img
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .exotic_diagnostics .data span
+    {
+        width: calc(100% - 32px);
+    }
+
+
+    .exotic_diagnostics .image
+    {
+        width: 354px;
+        height: 236px;
+    }
+
+
+
+    /*----------------------
+        Exotic - Surgery
+    ----------------------*/
+    .exotic_surgery
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .exotic_surgery .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .exotic_surgery .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .exotic_surgery .item
+    {
+        padding: 20px;
+    }
+
+
+    .exotic_surgery .item .icon
+    {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 12px;
+    }
+
+
+
+    /*---------------------
+        Exotic - Prices
+    ---------------------*/
+    .exotic_prices
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .exotic_prices .table_wrap.hide
+    {
+        height: 308px;
+    }
+
+
+    .exotic_prices table th,
+    .exotic_prices table td
+    {
+        font-size: 15px;
+
+        padding: 11px 15px;
+    }
+
+
+    .exotic_prices table td.price
+    {
+        width: 110px;
+        min-width: 110px;
+    }
+
+
+
+    /*--------------------
+        Exotic - Cases
+    --------------------*/
+    .exotic_cases
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .exotic_cases .swiper-button-next,
+    .exotic_cases .swiper-button-prev
+    {
+        display: none;
+    }
+
+    .exotic_cases .swiper-pagination
+    {
+        display: flex;
+    }
+
+
+
+    /*--------------------
+        Exotic - Gallery
+    --------------------*/
+    .exotic_gallery .swiper-button-next,
+    .exotic_gallery .swiper-button-prev
+    {
+        display: none;
+    }
+
+    .exotic_gallery .swiper-pagination
+    {
+        display: flex;
+    }
+
+
+
+    /*---------------------
+        Exotic - Finish
+    ---------------------*/
+    .exotic_finish
+    {
+        padding: 40px 0;
+    }
+
+
+    .exotic_finish .image
+    {
+        width: 350px;
+        height: 233px;
+    }
+
+
+    .exotic_finish .data
+    {
+        width: calc(100% - 380px);
+    }
+
+
+    .exotic_finish .message
+    {
+        padding: 19px;
+    }
+
+
+    .exotic_finish .message span
+    {
+        width: calc(100% - 52px);
+    }
+
+
+    .exotic_finish .btn
+    {
+        font-size: 17px;
+
+        width: 100%;
+        margin-top: 30px;
+        padding: 10px 32px;
+    }
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    /*------------
+        Exotic
+    ------------*/
+    .exotic > * + *
+    {
+        margin-top: 30px;
+    }
+
+
+    /*----------------------------
+        Exotic - First section
+    ----------------------------*/
+    .exotic_first_section
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .exotic_first_section .data
+    {
+        overflow: hidden;
+    }
+
+    .exotic_first_section .data .info
+    {
+        width: 100%;
+    }
+
+
+    .exotic_first_section .data .bg
+    {
+        right: auto;
+        bottom: -60px;
+        left: 50%;
+
+        width: 600px;
+        margin-right: 0;
+
+        transform: translateX(-50%);
+    }
+
+
+
+    .exotic_first_section .row
+    {
+        margin-bottom: -15px;
+        margin-left: 0;
+    }
+
+    .exotic_first_section .row > *
+    {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------------------
+        Exotic - Action block
+    ---------------------------*/
+    .exotic_action_block .btn
+    {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+
+
+    /*-----------------------
+        Exotic - The best
+    -----------------------*/
+    .exotic_the_best .items
+    {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .exotic_the_best .items > *
+    {
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+
+    .exotic_the_best .notice
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*-------------------------
+        Exotic - Recomended
+    -------------------------*/
+    .exotic_recomended
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .exotic_recomended .image
+    {
+        margin: 0 auto 20px;
+    }
+
+
+    .exotic_recomended .text
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+
+    /*-------------------------
+        Exotic - Prevention
+    -------------------------*/
+    .exotic_prevention
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .exotic_prevention .row
+    {
+        margin-left: 0;
+    }
+
+    .exotic_prevention .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .exotic_prevention .btn
+    {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+
+
+    /*--------------------
+        Exotic - Steps
+    --------------------*/
+    .exotic_steps
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .exotic_steps .row
+    {
+        margin-left: 0;
+    }
+
+    .exotic_steps .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------------------
+        Exotic - Why important
+    ----------------------------*/
+    .exotic_why_important
+    {
+        padding: 0 0 30px;
+    }
+
+
+
+    /*-----------------------
+        Exotic - Look_for
+    -----------------------*/
+    .exotic_look_for .data .col
+    {
+        width: 100%;
+    }
+
+
+    .exotic_look_for .data .or
+    {
+        margin: 15px auto;
+    }
+
+
+    .exotic_look_for .example
+    {
+        margin-top: 60px;
+    }
+
+
+    .exotic_look_for .example .image
+    {
+        margin: 0 auto 20px;
+    }
+
+
+    .exotic_look_for .example .info
+    {
+        width: 100%;
+    }
+
+
+    .exotic_look_for .example .btn
+    {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+
+
+    /*------------------------------
+        Exotic - Self-medication
+    ------------------------------*/
+    .exotic_self_medication .text
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .exotic_self_medication .icon
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+
+    /*----------------------
+        Exotic - Doctors
+    ----------------------*/
+    .exotic_doctors
+    {
+        padding: 30px 0;
+    }
+
+
+    .exotic_doctors .swiper-slide
+    {
+        width: 258px;
+    }
+
+
+
+    /*--------------------------
+        Exotic - Diagnostics
+    --------------------------*/
+    .exotic_diagnostics
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .exotic_diagnostics .data
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .exotic_diagnostics .image
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 66.666%;
+    }
+
+
+
+    /*----------------------
+        Exotic - Surgery
+    ----------------------*/
+    .exotic_surgery
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .exotic_surgery .row
+    {
+        margin-left: 0;
+    }
+
+    .exotic_surgery .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------------
+        Exotic - Prices
+    ---------------------*/
+    .exotic_prices
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .exotic_prices table td.price
+    {
+        width: 112px;
+        min-width: 112px;
+    }
+
+
+
+    /*--------------------
+        Exotic - Cases
+    --------------------*/
+    .exotic_cases
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .exotic_cases .swiper-slide
+    {
+        visibility: visible;
+
+        width: 330px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .exotic_cases .item .thumb
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------------
+        Exotic - Finish
+    ---------------------*/
+    .exotic_finish
+    {
+        padding: 30px 0;
+    }
+
+
+    .exotic_finish .data
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
